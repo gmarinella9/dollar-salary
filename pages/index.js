@@ -29,7 +29,7 @@ function Home({dollars}) {
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = await fetch('https://static.coins.infobae.com/cotizacion-simple/dolar-libre-riesgo.json')
+  const res = await fetch('https://dollar-salary.vercel.app/api/dollar')
   const dollars = await res.json()
   console.log(dollars)
   // By returning { props: posts }, the Blog component
