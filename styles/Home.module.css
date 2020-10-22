@@ -118,12 +118,12 @@
   height: 1em;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-} */
+}
 
 .box {
   margin: 0 auto;
@@ -145,4 +145,8 @@
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.values {
+  color: #ff0000
 }

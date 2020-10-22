@@ -6,7 +6,7 @@ function Box({data}){
    return (
      <div className={styles.box}>
        <p className={styles.description}>{data.currency}</p>
-       <h3>${data.unico}</h3>
+       <h3 className={styles.values}>${data.unico}</h3>
      </div>
    )
 }
@@ -18,7 +18,7 @@ function Home({dollars}) {
         {
           dollars.items.map((coin)=>{
             if (coin.tag != '' && coin.tag != 'riesgo-pais') {
-              return <Box data={coin}/>
+              return <Box key={coin.tag} data={coin}/>
             }
           })
         }
